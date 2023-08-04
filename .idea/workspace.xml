@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee2dea4-60c0-4487-9181-90d8a149ffe0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HeadersSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HeadersSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ConfigurationFile/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ConfigurationFile/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ConfigurationFile/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ConfigurationFile/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdef/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,7 +130,7 @@
       <workItem from="1690991518203" duration="2255000" />
       <workItem from="1690994189956" duration="1860000" />
       <workItem from="1691057052792" duration="23000" />
-      <workItem from="1691057081074" duration="11451000" />
+      <workItem from="1691057081074" duration="15104000" />
     </task>
     <servers />
   </component>

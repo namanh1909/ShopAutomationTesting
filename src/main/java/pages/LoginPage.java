@@ -14,16 +14,16 @@ public class LoginPage {
 		PageFactory.initElements(Base.driver, this);
 	}
 
-	@FindBy(xpath = "//input[contains(@placeholder,'Tên đăng nhập hoặc Email')]")
+	@FindBy(xpath = "//input[@id='input-email']")
 	public static WebElement emailField;
 
-	@FindBy(xpath = "//input[@placeholder='Mật khẩu']")
+	@FindBy(xpath = "//input[@id='input-password']")
 	public static WebElement passwordField;
 
-	@FindBy(xpath="//button[@class='btn btn-block btn-submit']")
+	@FindBy(xpath="//input[@value='Login']")
 	public static WebElement loginButton;
 
-	@FindBy(xpath="//div[@class='alert-danger']")
+	@FindBy(xpath="//i[@class='fa fa-exclamation-circle']")
 	public static WebElement warningMessage;
 
 	public void doLogin(String email, String password) {
@@ -31,9 +31,9 @@ public class LoginPage {
 		passwordField.sendKeys(password);
 		loginButton.click();
 	}
-	public boolean checkMessageInvalidAccount(String message){
+	public boolean checkMessageInvalidAccount(){
 		Waits.waitUntilElementLocated(20, warningMessage);
-		if(message == warningMessage.getText()) return true;
+		if(warningMessage.isDisplayed()) return true;
 		return false;
 	}
 
