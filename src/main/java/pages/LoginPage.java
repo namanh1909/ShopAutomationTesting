@@ -10,7 +10,6 @@ import base.Base;
 public class LoginPage {
 	
 	public LoginPage() {
-
 		PageFactory.initElements(Base.driver, this);
 	}
 
@@ -26,6 +25,9 @@ public class LoginPage {
 	@FindBy(xpath="//i[@class='fa fa-exclamation-circle']")
 	public static WebElement warningMessage;
 
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	public static WebElement successMessage;
+
 	public void doLogin(String email, String password) {
 		emailField.sendKeys(email);
 		passwordField.sendKeys(password);
@@ -37,5 +39,10 @@ public class LoginPage {
 		return false;
 	}
 
+	public boolean isSuccessSendEmail(){
+		Waits.waitUntilElementLocated(20, successMessage);
+		if(successMessage.isDisplayed()) return true;
+		return false;
+	}
 
 }

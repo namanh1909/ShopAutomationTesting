@@ -19,7 +19,7 @@ public class Login {
 		Browser.openApplication();
 	}
 
-	@And("^I navigate to Account Login page$")
+	@And("^I navigate to Login page$")
 	public void i_navigate_to_Account_Login_page() {
 		headersSection.navigateToLoginPage();
 	}
@@ -33,7 +33,6 @@ public class Login {
 	public void i_should_see_that_the_user_is_able_to_login_successfully() {
 		Assert.assertTrue(accountPage.isLogin());
 	}
-
 
 	@Then("^I should see a error message that the credentials invalid$")
 	public void iShouldSeeAErrorMessageThatTheCredentialsInvalid() {
