@@ -17,26 +17,15 @@ public class ForgotPasswordPage {
     @FindBy(id = "input-email")
     public static WebElement emailField;
 
-    @FindBy(css = "input[type='submit'][value='Continue']\r\n" + "")
+    @FindBy(css = "input[type='submit'][value='Continue']\r\n")
     public static WebElement continueButton;
 
     @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
     public static WebElement emailValidate;
 
-    public boolean isNavigateForgotPasswordPageSuccess(){
-        Waits.waitUntilElementLocated(10, title);
-        if(title.isDisplayed()){
-            return true;
-        }
-        return false;
-    }
-
     public boolean isShowEmailValidate(){
         Waits.waitUntilElementLocated(10, emailValidate);
-        if(emailValidate.isDisplayed()){
-            return true;
-        }
-        return false;
+        return emailValidate.isDisplayed();
     }
 
     public void submitForm(String email){

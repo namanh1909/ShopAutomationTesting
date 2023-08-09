@@ -35,14 +35,12 @@ public class LoginPage {
 	}
 	public boolean checkMessageInvalidAccount(){
 		Waits.waitUntilElementLocated(20, warningMessage);
-		if(warningMessage.isDisplayed()) return true;
-		return false;
+		return warningMessage.isDisplayed();
 	}
 
 	public boolean isSuccessSendEmail(){
 		Waits.waitUntilElementLocated(20, successMessage);
-		if(successMessage.isDisplayed()) return true;
-		return false;
+		return successMessage.isDisplayed();
 	}
 
 }

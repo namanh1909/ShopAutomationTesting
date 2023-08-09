@@ -35,4 +35,5 @@ public class ForgotPassword {
     public void iShouldSeeMessageErrorInvalidEmail() {
         Assert.assertTrue(forgotPasswordPage.isShowEmailValidate());
     }
+
 }

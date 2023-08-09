@@ -7,7 +7,7 @@ Feature: Login functionality scenarios
     When I login to the Application using Username "chuoineba2k1@gmail.com" and Password "anhnam123"
     Then I should see that the user is able to login successfully
 
-  @Login @Valid
+  @Login @Invalid
   Scenario Outline: Verify whether the user is not able to login with invalid credentials
     Given I launch the application
     And I navigate to Login page
@@ -16,11 +16,21 @@ Feature: Login functionality scenarios
     Examples:
       | email                  | password  |
       |  | Wrong@123 |
-      | namho89@gmail.com |  |
-      | namho@ | 123 |
+      | qwyiuqwyeiuyqwiueyiquwyieyqiwyeiqywieyiqwyeiqywiueyqiwyeisgi@gmail.com | Wrong@123|
+      | ho nam@gmail.com | Wrong@123 |
+      | namho@g | Wrong@123 |
+      | namho@g | Wrong@123 |
       | namho@gmail.com |  |
-      | namho@gmail.com | 1 |
-      | namho@gmail.com | 1221 |
+      | namho@gmail.com | asdasdasgdqtwjggasjhdghjasgdjhagsjhdgajhsgdajgsdhjvqwjvdnabvsndvasduiqw |
+      | namho@gmail.com | 125 |
+      | namho@gmail.com | 125 |
+      |namhhh22o@gmail.com | anhnam123|
+
+
+
+
+
+
 
 
 

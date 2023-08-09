@@ -33,7 +33,4 @@ public class HeadersSection {
 		registerOption.click();
 	}
 
-
-
-
 }

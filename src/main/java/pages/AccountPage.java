@@ -20,25 +20,27 @@ public class AccountPage {
     @FindBy(xpath = "//a[@class='list-group-item'][normalize-space()='Forgotten Password']")
     public static WebElement forgotPasswordOption;
 
+    @FindBy(xpath = "//a[normalize-space()='Edit Account']")
+    public static WebElement editInformation;
+
     public void navigateToForgotPassword(){
         Waits.waitUntilElementToClick(10,forgotPasswordOption);
         forgotPasswordOption.click();
     }
 
+    public void navigateToEditInformation(){
+        Waits.waitUntilElementToClick(10,editInformation);
+        editInformation.click();
+    }
+
     public boolean isLogin(){
         Waits.waitUntilElementLocated(10, editAccountOption);
-        if(editAccountOption.isDisplayed()){
-            return true;
-        }
-        return false;
+        return editAccountOption.isDisplayed();
     }
 
     public boolean isRegisterSuccess(){
         Waits.waitUntilElementLocated(10, suscessRegisterText);
-        if(suscessRegisterText.isDisplayed()){
-            return true;
-        }
-        return false;
+        return suscessRegisterText.isDisplayed();
     }
 
 }

@@ -14,8 +14,12 @@ Feature: Forgot password functionality scenarios
     When I enter email value "<email>" and click continue button
     Then I should see message error invalid email
     Examples:
-      | email         |
-      | invalid.email |
-      |               |
+      | email                                                                  |
+      |                                                                        |
+      | qiwueoqwuoeuoqwueoiquwoeuqoweuioquweoiqywiuryquweyqiuwyeiuqe@gmail.com |
+      | nam ho@gmail.com                                                       |
+      | namho@com                                                              |
+
+
 
 

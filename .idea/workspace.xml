@@ -5,22 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee2dea4-60c0-4487-9181-90d8a149ffe0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdef/ForgotPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdef/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/ForgotPassword.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Register.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EditAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdef/EditAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/EditAccount.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ConfigurationReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/PropertyFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/PropertyFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HeadersSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HeadersSection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ConfigurationFile/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ConfigurationFile/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ConfigurationFile/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ConfigurationFile/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdef/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/ForgotPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdef/ForgotPassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdef/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdef/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/FeatureFiles/ForgotPassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/ForgotPassword.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Register.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2TOmmVrbgchb79Ms8eyad3OhInv" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,25 +62,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/hoanhnam/AutomationShopeefood/src/test/java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hoanhnam/AutomationShopeefood&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java" />
@@ -138,7 +148,23 @@
       <workItem from="1690991518203" duration="2255000" />
       <workItem from="1690994189956" duration="1860000" />
       <workItem from="1691057052792" duration="23000" />
-      <workItem from="1691057081074" duration="41505000" />
+      <workItem from="1691057081074" duration="42507000" />
+      <workItem from="1691317985524" duration="912000" />
+      <workItem from="1691320205537" duration="8837000" />
+      <workItem from="1691343403552" duration="53000" />
+      <workItem from="1691343627918" duration="1462000" />
+      <workItem from="1691345106192" duration="158000" />
+      <workItem from="1691345471544" duration="52000" />
+      <workItem from="1691345931534" duration="37000" />
+      <workItem from="1691345976975" duration="323000" />
+      <workItem from="1691346312572" duration="111000" />
+      <workItem from="1691346555120" duration="42000" />
+      <workItem from="1691346626678" duration="499000" />
+      <workItem from="1691347153887" duration="291000" />
+      <workItem from="1691348147754" duration="998000" />
+      <workItem from="1691349206682" duration="19552000" />
+      <workItem from="1691442606286" duration="6069000" />
+      <workItem from="1691489123119" duration="14054000" />
     </task>
     <servers />
   </component>

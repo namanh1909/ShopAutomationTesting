@@ -5,10 +5,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = { "classpath:FeatureFiles/ForgotPassword.feature" },
+		features = { "classpath:FeatureFiles"},
 		glue = {"classpath:stepdef" },
 		plugin = { "html:target/cucumber_html_report" },
-		tags= {"@forgotPassword",}
+		tags= {"@forgotPassword"}
 )
 public class Runner {
 
