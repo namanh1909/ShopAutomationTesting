@@ -29,13 +29,16 @@ public class EditAccount {
         Assert.assertTrue(editAccountPage.isShowSuccessUpdatedMessage());
     }
 
-    @Then("^I should see message firstName error$")
-    public void iShouldSeeMessageFirstNameError() {
-    }
-
     @When("^I submit the account edit form with new details with \"([^\"]*)\" \\(firstName \"([^\"]*)\", lastName \"([^\"]*)\", email \"([^\"]*)\", telephone \"([^\"]*)\"$")
     public void iSubmitTheAccountEditFormWithNewDetailsWithFirstNameLastNameEmailTelephone(String type, String firstName, String lastName, String email, String telephone) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         editAccountPage.submitUpdateAccountForm(type ,firstName, lastName, email, telephone);
+    }
+
+    @Then("^If edit success Navigate to Login page and show a success message, else I should see message firstName error \"([^\"]*)\"$")
+    public void ifEditSuccessNavigateToLoginPageAndShowASuccessMessageElseIShouldSeeMessageFirstNameError(String type) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        editAccountPage.isShowSuccessUpdated(type);
+
     }
 }

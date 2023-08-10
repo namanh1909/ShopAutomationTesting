@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee2dea4-60c0-4487-9181-90d8a149ffe0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EditAccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdef/EditAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/EditAccount.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/Validate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ConfigurationReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/PropertyFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/PropertyFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HeadersSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HeadersSection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EditAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EditAccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ConfigurationFile/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ConfigurationFile/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/ForgotPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdef/ForgotPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdef/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdef/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/FeatureFiles/ForgotPassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/ForgotPassword.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/EditAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdef/EditAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/FeatureFiles/EditAccount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/EditAccount.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/Register.feature" afterDir="false" />
     </list>
@@ -164,7 +155,8 @@
       <workItem from="1691348147754" duration="998000" />
       <workItem from="1691349206682" duration="19552000" />
       <workItem from="1691442606286" duration="6069000" />
-      <workItem from="1691489123119" duration="14054000" />
+      <workItem from="1691489123119" duration="17065000" />
+      <workItem from="1691694698585" duration="3144000" />
     </task>
     <servers />
   </component>

@@ -19,10 +19,9 @@ Feature: Login functionality scenarios
       | qwyiuqwyeiuyqwiueyiquwyieyqiwyeiqywieyiqwyeiqywiueyqiwyeisgi@gmail.com | Wrong@123|
       | ho nam@gmail.com | Wrong@123 |
       | namho@g | Wrong@123 |
-      | namho@g | Wrong@123 |
+
       | namho@gmail.com |  |
       | namho@gmail.com | asdasdasgdqtwjggasjhdghjasgdjhagsjhdgajhsgdajgsdhjvqwjvdnabvsndvasduiqw |
-      | namho@gmail.com | 125 |
       | namho@gmail.com | 125 |
       |namhhh22o@gmail.com | anhnam123|
 

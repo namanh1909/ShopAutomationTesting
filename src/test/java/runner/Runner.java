@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 		features = { "classpath:FeatureFiles"},
 		glue = {"classpath:stepdef" },
 		plugin = { "html:target/cucumber_html_report" },
-		tags= {"@forgotPassword"}
+		tags= {"@EditAccount"}
 )
 public class Runner {
 
