@@ -29,8 +29,13 @@ public class LoginPage {
 	public static WebElement successMessage;
 
 	public void doLogin(String email, String password) {
+		Waits.waitUntilElementLocated(10,emailField);
+		emailField.isDisplayed();
 		emailField.sendKeys(email);
+		Waits.waitUntilElementLocated(10, passwordField);
+		passwordField.isDisplayed();
 		passwordField.sendKeys(password);
+		Waits.waitUntilElementToClick(10, loginButton);
 		loginButton.click();
 	}
 	public boolean checkMessageInvalidAccount(){

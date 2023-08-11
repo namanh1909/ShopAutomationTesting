@@ -29,7 +29,10 @@ public class ForgotPasswordPage {
     }
 
     public void submitForm(String email){
+        Waits.waitUntilElementLocated(10, emailField);
+        emailField.isDisplayed();
         emailField.sendKeys(email);
+        Waits.waitUntilElementToClick(10, continueButton);
         continueButton.click();
     }
 

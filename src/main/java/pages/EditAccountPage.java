@@ -40,25 +40,51 @@ public class EditAccountPage {
 
     public void submitUpdateAccountForm(String type, String firstName, String lastName, String email, String telephone) {
         if(type.equals("invalidEmail") || type.equals("alreadyEmail") || type.equals("valid")){
+            Waits.waitUntilElementLocated(10,firstNameInput);
+            firstNameInput.isDisplayed();
             firstNameInput.clear();
             firstNameInput.sendKeys(firstName);
+
+            Waits.waitUntilElementLocated(10,lastNameInput);
+            lastNameInput.isDisplayed();
             lastNameInput.clear();
             lastNameInput.sendKeys(lastName);
+
+            Waits.waitUntilElementLocated(10,emailInput);
+            emailInput.isDisplayed();
             emailInput.clear();
             emailInput.sendKeys(email);
+
+            Waits.waitUntilElementLocated(10,emailInput);
+            telephoneInput.isDisplayed();
             telephoneInput.clear();
             telephoneInput.sendKeys(telephone);
+
+            Waits.waitUntilElementToClick(10, continueButton);
             continueButton.click();
         }
         else {
+            Waits.waitUntilElementLocated(10,firstNameInput);
+            firstNameInput.isDisplayed();
             firstNameInput.clear();
             firstNameInput.sendKeys(firstName);
+
+            Waits.waitUntilElementLocated(10,lastNameInput);
+            lastNameInput.isDisplayed();
             lastNameInput.clear();
             lastNameInput.sendKeys(lastName);
+
+            Waits.waitUntilElementLocated(10,emailInput);
+            emailInput.isDisplayed();
             emailInput.clear();
             emailInput.sendKeys(Email.getRandomEmail() + "@gmail.com");
+
+            Waits.waitUntilElementLocated(10,telephoneInput);
+            telephoneInput.isDisplayed();
             telephoneInput.clear();
             telephoneInput.sendKeys(telephone);
+
+            Waits.waitUntilElementToClick(10, continueButton);
             continueButton.click();
         }
     }

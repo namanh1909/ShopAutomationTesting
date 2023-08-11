@@ -24,12 +24,16 @@ public class HeadersSection {
 	public static WebElement registerOption;
 
 	public void navigateToLoginPage(){
+		Waits.waitUntilElementToClick(10,myAccountDropdown);
 		myAccountDropdown.click();
+		Waits.waitUntilElementToClick(10,loginOption);
 		loginOption.click();
 	}
 
 	public void navigateToRegisterPage(){
+		Waits.waitUntilElementToClick(10,myAccountDropdown);
 		myAccountDropdown.click();
+		Waits.waitUntilElementToClick(10,registerOption);
 		registerOption.click();
 	}
 

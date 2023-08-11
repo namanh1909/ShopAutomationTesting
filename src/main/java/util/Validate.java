@@ -1,6 +1,7 @@
 package util;
 
 import base.Base;
+import framework.Waits;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -30,24 +31,32 @@ public class Validate {
 
 
     public boolean isShowFirstNameValidate(){
-        return firstNameValidate.isDisplayed();
+        Waits.waitUntilElementLocated(10,firstNameValidate);
+         return firstNameValidate.isDisplayed();
     }
 
     public boolean isShowLastNameValidate(){
+        Waits.waitUntilElementLocated(10,lastNameValidate);
         return lastNameValidate.isDisplayed();
     }
 
     public boolean isShowEmailValidate(){
+        Waits.waitUntilElementLocated(10,emailValidate);
         return emailValidate.isDisplayed();
     }
 
     public boolean isShowTelephoneValidate(){
+        Waits.waitUntilElementLocated(10,telephoneValidate);
+
         return telephoneValidate.isDisplayed();
     }
     public boolean isShowPasswordValidate(){
+        Waits.waitUntilElementLocated(10,passwordValidate);
+
         return passwordValidate.isDisplayed();
     }
     public boolean isShowConfirmPasswordValidate(){
+        Waits.waitUntilElementLocated(10,confirmPasswordValidate);
         return confirmPasswordValidate.isDisplayed();
     }
 

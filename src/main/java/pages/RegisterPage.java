@@ -1,6 +1,7 @@
 package pages;
 import base.Base;
 import framework.Waits;
+import gherkin.lexer.El;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -40,39 +41,50 @@ public class RegisterPage {
 
 
     @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
-        public static WebElement checkboxValidate;
+    public static WebElement checkboxValidate;
 
-    public void doRegister(String type, String fisrtName, String lastName, String email, String telephone, String password, String confirmPassword, String checkbox){
+    public void submitForm(String fisrtName, String lastName, String email, String telephone, String password, String confirmPassword, String checkbox) {
+        Waits.waitUntilElementLocated(10, firstname);
+        firstname.isDisplayed();
+        firstname.sendKeys(fisrtName);
 
-        if(type.equals("invalidEmail") || type.equals("alreadyEmail")){
-            firstname.sendKeys(fisrtName);
-            lastname.sendKeys(lastName);
-            emailInput.sendKeys(email);
-            telephoneInput.sendKeys(telephone);
-            passwordInput.sendKeys(password);
-            confirmPasswordInput.sendKeys(confirmPassword);
-            Waits.waitUntilElementToClick(10, acpPolicyCheckbox);
-            if(checkbox.equals("true")){
-                acpPolicyCheckbox.click();
-            }
-            submitButton.click();
+        Waits.waitUntilElementLocated(10, lastname);
+        lastname.isDisplayed();
+        lastname.sendKeys(lastName);
+
+        Waits.waitUntilElementLocated(10, emailInput);
+        emailInput.isDisplayed();
+        emailInput.sendKeys(email);
+
+        Waits.waitUntilElementLocated(10, telephoneInput);
+        telephoneInput.isDisplayed();
+        telephoneInput.sendKeys(telephone);
+
+        Waits.waitUntilElementLocated(10, passwordInput);
+        passwordInput.isDisplayed();
+        passwordInput.sendKeys(password);
+
+        Waits.waitUntilElementLocated(10, confirmPasswordInput);
+        confirmPasswordInput.isDisplayed();
+        confirmPasswordInput.sendKeys(confirmPassword);
+
+        Waits.waitUntilElementToClick(10, acpPolicyCheckbox);
+        if (checkbox.equals("true")) {
+            acpPolicyCheckbox.click();
         }
-        else {
-            firstname.sendKeys(fisrtName);
-            lastname.sendKeys(lastName);
-            emailInput.sendKeys(Email.getRandomEmail() + "@gmail.com");
-            telephoneInput.sendKeys(telephone);
-            passwordInput.sendKeys(password);
-            confirmPasswordInput.sendKeys(confirmPassword);
-            Waits.waitUntilElementToClick(10, acpPolicyCheckbox);
-            if(checkbox.equals("true")){
-                acpPolicyCheckbox.click();
-            }
-            submitButton.click();
+        Waits.waitUntilElementToClick(10, submitButton);
+        submitButton.click();
+    }
+
+    public void doRegister(String type, String fisrtName, String lastName, String email, String telephone, String password, String confirmPassword, String checkbox) {
+        if (type.equals("invalidEmail") || type.equals("alreadyEmail")) {
+            submitForm(fisrtName, lastName, email, telephone, password, confirmPassword, checkbox);
+        } else {
+            submitForm(fisrtName, lastName, Email.getRandomEmail() + "@gmail.com", telephone, password, confirmPassword, checkbox);
         }
     }
 
-    public boolean isShowAcpPolicyCheckboxValidate(){
+    public boolean isShowAcpPolicyCheckboxValidate() {
         return checkboxValidate.isDisplayed();
     }
 
